@@ -1,0 +1,206 @@
+/* //////////////////////////////////////////////////// */
+/* Timeline Desktop */
+/* //////////////////////////////////////////////////// */
+
+.timeline {
+  padding: 30px 10px;
+  position: relative;
+  max-height: 1350px;
+  &:before {
+    content: " ";
+    background: white;
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2.5px;
+    height: 76%;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  }
+  &__badge {
+    color: var(--second-color);
+    background: white;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+  }
+  &__container {
+    width: 50%;
+    float: left;
+    height: 250px;
+    &--inverted {
+      width: 50%;
+      float: right;
+      height: 250px;
+      & .timeline_panel {
+        float: left;
+        margin-left: 40px;
+        &:after {
+          border-left-width: 0;
+          border-right: 13px solid white;
+          left: -12px;
+          right: auto;
+        }
+      }
+    }
+  }
+  &__panel {
+    position: relative;
+    float: right;
+    margin-right: 40px;
+    background: white;
+    width: 90%;
+    border: 1px solid #d4d4d4;
+    border-radius: 7px;
+    padding: 20px 25px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    // background-color: red !important;
+    &:after {
+      /* Triangle */
+      content: " ";
+      position: absolute;
+      top: 24px;
+      right: -12px;
+      /* Triangle right */
+      border-top: 18px solid transparent;
+      border-left: 13px solid white;
+      border-bottom: 18px solid transparent;
+    }
+  }
+}
+
+/* //////////////////////////////////////////////////// */
+/* Timeline Mobile  */
+/* //////////////////////////////////////////////////// */
+
+.timeline-mobile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &:before {
+    /* Vertical timeline */
+    content: " ";
+    background: white;
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    margin-left: -2.5px;
+    height: 100%;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  }
+  &__badge {
+    color: var(--second-color);
+    background: white;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 18px;
+    left: -20px;
+    margin-left: -25px;
+  }
+  &__panel {
+    margin-left: 30px;
+    background: white;
+    width: 90%;
+    border: 1px solid #d4d4d4;
+    border-radius: 7px;
+    padding: 20px 25px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    &:after {
+      /* Triangle */
+      content: " ";
+      position: absolute;
+      top: 24px;
+      left: 18px;
+      /* Triangle right */
+      border-top: 18px solid transparent;
+      border-right: 13px solid white;
+      border-bottom: 18px solid transparent;
+    }
+  }
+}
+
+/* //////////////////////////////////////////////////// */
+/* Adjust each time-panel position  */
+/* //////////////////////////////////////////////////// */
+
+.timeline li:nth-child(2) .timeline__panel {
+  top: -55px;
+}
+
+.timeline li:nth-child(2) .timeline__badge {
+  top: -40px;
+}
+
+.timeline li:nth-child(3) .timeline__panel {
+  top: -115px;
+}
+
+.timeline li:nth-child(3) .timeline__badge {
+  top: -100px;
+}
+
+.timeline li:nth-child(4) .timeline__panel {
+  top: -175px;
+}
+
+.timeline li:nth-child(4) .timeline__badge {
+  top: -160px;
+}
+
+.timeline li:nth-child(5) .timeline__panel {
+  top: -200px;
+}
+
+.timeline li:nth-child(5) .timeline__badge {
+  top: -185px;
+}
+
+/* //////////////////////////////////////////////////// */
+/* Other  */
+/* //////////////////////////////////////////////////// */
+
+.timeline__heading h3 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.timeline__heading h4 {
+  color: var(--second-color);
+}
+
+.timeline__heading h3 img {
+  position: relative;
+  left: -12px;
+}
+
+.timeline > li,
+.timeline__mobile > li {
+  margin-bottom: 20px;
+  position: relative;
+  list-style: none;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li:after,
+.timeline > li:before {
+  content: " ";
+  display: table;
+}

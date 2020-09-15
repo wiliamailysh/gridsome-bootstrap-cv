@@ -1,83 +1,78 @@
 <template>
-  <header class="header">
-    <b-navbar class="p-0" toggleable="md" type="light">
-        <b-navbar-brand>
-        <g-link class="logo-home logo-desktop" to="/">{{ $static.metadata.siteName }}</g-link>
-        <g-link class="logo-home logo–mobile" to="/"><img class="logo-image" alt="logo" src="../assets/images/logo.png"></g-link>
-      </b-navbar-brand>
-      <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-      <b-collapse is-nav id="nav_collapse">
-        <b-navbar-nav class="ml-auto">
-          <g-link class="nav--link" to="/about">About</g-link>
-          <g-link class="nav--link" to="/blog">Blog</g-link>
-          <g-link class="nav--link" to="/contact">Contact</g-link>
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
-  </header>
+  <!-- NAVBAR -->
+  <nav
+    class="navbar navbar-expand-lg navbar-light fixed-top"
+    data-aos="fade-down"
+  >
+    <div class="nav-brand"><a href="#about">DOUAY VICTOR</a></div>
+    <button
+      type="button"
+      class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#myNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio__anchor">portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills__anchor">compétences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience__anchor">parcours</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </template>
-
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
-
 <style lang="scss">
-nav {
-  width: 100%;
-  padding-top: 1rem;
-}
-
-.header {
+.navbar {
+  background-color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
 }
 
-.logo-home {
-  font-size: 24px;
-  max-width: 75%;
-  font-weight: bold;
-  &:hover {
-    text-decoration: none;
-  }
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.logo-desktop {
-  @media(max-width: 419px) {
-    display: none;
-  }
-  @media (min-width: 420px) {
-    display: default;
-  }
-}
-
-.logo–mobile {
-  @media(max-width: 419px) {
-    display: default;
-  }
-  @media (min-width: 420px) {
-    display: none;
-  }
-}
-
-.logo-image {
-  width: 40px;
-}
-
-.nav--link {
+.nav-brand {
   margin-left: 20px;
-  @media (max-width: 419px) {
-    margin: 0;
-    padding: 15px 10px 10px 0;
-  }
 }
 
-.active--exact {
-  font-weight: bold;
+.navbar-toggler {
+  border-style: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.nav-item {
+  padding: 5px 0;
+  margin: 0 10px;
+}
+
+.nav-link {
+  padding: 8px 22px !important;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background: var(--third-color);
+  color: white !important;
+}
+
+.nav-link:active {
+  background: var(--third-color);
+  color: white !important;
 }
 </style>

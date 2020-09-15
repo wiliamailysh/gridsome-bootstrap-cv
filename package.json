@@ -6,14 +6,28 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-regular-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.6.1",
+    "@gridsome/transformer-remark": "^0.6.2",
+    "aos": "^2.3.4",
     "bootstrap": "^4.3.1",
-    "gridsome": "^0.7.19",
     "bootstrap-vue": "^2.15.0",
-    "node-sass": "^4.13.0",
-    "sass-loader": "^7.0.0"
+    "gridsome": "^0.7.19",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.0.0",
+    "vue2-scrollspy": "^2.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "2.1.1"
   }
 }

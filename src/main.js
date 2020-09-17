@@ -1,14 +1,8 @@
 import DefaultLayout from "~/layouts/Default.vue";
-
-import Vue from "vue";
-import App from "./App.vue";
-
 import BootstrapVue from "bootstrap-vue";
 import "./assets/styles/main.scss";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import Scrollspy from "vue2-scrollspy";
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faEnvelope,
@@ -21,22 +15,17 @@ import {
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import breakpoint from "better-vue-breakpoints";
 
-import checkIfMobile from "./mixins/checkIfMobile";
-
-export default function(Vue, { router, head, isClient }) {
-  new Vue({
-    created() {
-      AOS.init({ disable: "phone" });
-    },
-    router,
-    render: (h) => h(App),
-  }).$mount("#app");
+export default function (Vue, { router, head, isClient }) {
+  // Font-awesome
+  Vue.component("font-awesome-icon", FontAwesomeIcon);
+  Vue.config.productionTip = false;
 
   Vue.use(BootstrapVue);
   Vue.use(Scrollspy);
+  Vue.use(breakpoint);
   Vue.component("Layout", DefaultLayout);
-  Vue.mixin(checkIfMobile);
 
   library.add(
     faLinkedin,
@@ -49,6 +38,4 @@ export default function(Vue, { router, head, isClient }) {
     faClock,
     faBriefcase
   );
-  Vue.component("font-awesome-icon", FontAwesomeIcon);
-  Vue.config.productionTip = false;
 }

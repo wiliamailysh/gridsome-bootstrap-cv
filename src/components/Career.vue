@@ -4,7 +4,7 @@
       <div class="heading">
         <h2>mon parcours</h2>
       </div>
-      <ul :class="[!isMobileList ? 'timeline' : 'timeline__mobile']">
+      <ul :class="[$breakpoint.smAndDown ? 'timeline__mobile' : 'timeline']">
         <li v-for="(e, i) in experiences" :key="`exp-${i}`">
           <div data-aos="zoom-in" class="timeline__badge">
             <font-awesome-icon :icon="['fas', `${e.icon}`]" />
@@ -45,17 +45,11 @@
 
 <script>
 import experiences from "../mixins/experiences.js";
-import { isMobile } from "../mixins/checkIfMobile.js";
 export default {
   data() {
     return {
       experiences,
     };
-  },
-  computed: {
-    isMobileList: function () {
-      return this.isMobile();
-    },
   },
 };
 </script>

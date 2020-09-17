@@ -17,6 +17,7 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.2",
     "aos": "^2.3.4",
+    "better-vue-breakpoints": "^0.1.4",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.15.0",
     "gridsome": "^0.7.19",

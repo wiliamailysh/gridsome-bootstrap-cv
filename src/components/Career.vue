@@ -12,7 +12,7 @@
           <div :class="`timeline__container${i % 2 ? '' : '--inverted'}`">
             <div
               :data-aos="`${
-                i % 2 && !isMobileList ? 'fade-right' : 'fade-left'
+                i % 2 && !$breakpoint.smAndDown ? 'fade-right' : 'fade-left'
               }`"
               class="timeline__panel"
             >

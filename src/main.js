@@ -1,5 +1,7 @@
 import DefaultLayout from "~/layouts/Default.vue";
 import BootstrapVue from "bootstrap-vue";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
 import "./assets/styles/main.scss";
 import "aos/dist/aos.css";
 import Scrollspy from "vue2-scrollspy";

@@ -1,32 +1,17 @@
 <template>
-  <!-- NAVBAR -->
-  <nav
-    class="navbar navbar-expand-lg navbar-light fixed-top"
-    data-aos="fade-down"
-  >
-    <div class="nav-brand"><a href="#about">DOUAY VICTOR</a></div>
-    <button
-      type="button"
-      class="navbar-toggler"
-      data-toggle="collapse"
-      data-target="#myNavbar"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio__anchor">portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills__anchor">compétences</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience__anchor">parcours</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <b-navbar toggleable="lg" fixed="top">
+    <b-navbar-brand href="#">DOUAY VICTOR</b-navbar-brand>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+        <b-nav-item href="#portfolio__anchor">portfolio</b-nav-item>
+        <b-nav-item href="#skills__anchor">compétences</b-nav-item>
+        <b-nav-item href="#experience__anchor">parcours</b-nav-item>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 <style lang="scss">
 .navbar {
@@ -34,18 +19,17 @@
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 4px;
-  display: flex;
+  letter-spacing: 5px;
 }
 
 .navbar-nav {
   width: 100%;
-  display: flex;
   justify-content: flex-end;
 }
 
-.nav-brand {
+.navbar-brand {
   margin-left: 20px;
+  font-size: 12px !important;
 }
 
 .navbar-toggler {

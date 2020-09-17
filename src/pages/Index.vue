@@ -12,7 +12,7 @@ import IndexHero from "~/components/IndexHero";
 import Project from "~/components/Project";
 import Skills from "~/components/Skills";
 import Career from "~/components/Career";
-import AOS from "aos";
+// import AOS from "aos";
 
 export default {
   components: {
@@ -21,8 +21,8 @@ export default {
     Skills,
     Career,
   },
-  created() {
-    AOS.init();
-  },
+  // created() {
+  //   AOS.init();
+  // },
 };
 </script>

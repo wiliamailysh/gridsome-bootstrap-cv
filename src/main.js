@@ -3,8 +3,7 @@ import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import "./assets/styles/main.scss";
-import "aos/dist/aos.css";
-import Scrollspy from "vue2-scrollspy";
+// import "aos/dist/aos.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faEnvelope,
@@ -25,7 +24,6 @@ export default function (Vue, { router, head, isClient }) {
   Vue.config.productionTip = false;
 
   Vue.use(BootstrapVue);
-  Vue.use(Scrollspy);
   Vue.use(breakpoint);
   Vue.component("Layout", DefaultLayout);
 

@@ -14,9 +14,8 @@
             web junior
           </h1>
           <h3>
-            Profil autodidacte passionné par la technologie et l'image, en
-            reconversion professionnelle dans le développement web après un
-            bootcamp à The Hacking Project
+            Profil autodidacte passionné par la technologie et l'image,
+             en poste en tant que développeur Front-end VueJS chez Compta Clementine
           </h3>
           <a href="docs/CV_DOUAY.pdf" class="about__button" target="_blank"
             >Téléchargez CV</a

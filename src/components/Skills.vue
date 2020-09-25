@@ -31,7 +31,7 @@
           <div
             v-for="(s, i) in skills"
             :key="`skill-${i}`"
-            class="col-4 col-md-2"
+            class="skills__picture__container col-4 col-md-2"
           >
             <g-image
               class="skills__picture"
@@ -71,11 +71,25 @@ export default {
     background: white;
     padding: 5rem;
   }
+  &__picture {
+    // Use bootstrap breakpoints mixins
+    @media screen and (max-width: 640px) {
+      max-height: 7vh;
+    }
+    @media screen and (min-width: 641px) and (max-width: 991px) {
+      max-height: 9vh;
+    }
+    @media screen and (min-width: 992px) {
+      max-height: 18vh;
+    }
+    width: auto;
+    margin-top: 2rem;
+  }
 }
 
-.skills__picture {
-  width: 80%;
-  margin-top: 2rem;
+.skills__picture__container {
+  display: flex;
+  justify-content: center;
 }
 
 .other {

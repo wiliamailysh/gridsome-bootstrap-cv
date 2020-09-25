@@ -1,20 +1,8 @@
 module.exports = [
   {
-    logoPath: "logo/rails.png",
-    description: "Ruby on Rails",
-    animation: "fade-right",
-    delayAnimation: "250",
-  },
-  {
-    logoPath: "logo/html.png",
-    description: "HTML 5",
-    animation: "fade-right",
-    delayAnimation: "100",
-  },
-  {
-    logoPath: "logo/css.png",
-    description: "CSS 3",
-    animation: "fade-right",
+    logoPath: "logo/typescript.png",
+    description: "Typescript",
+    animation: "fade-left",
     delayAnimation: "0",
   },
   {
@@ -22,6 +10,19 @@ module.exports = [
     description: "Javascript",
     animation: "fade-left",
     delayAnimation: "0",
+    
+  },
+  {
+    logoPath: "logo/vuejs.png",
+    description: "Vue JS",
+    animation: "fade-right",
+    delayAnimation: "250",
+  },
+  {
+    logoPath: "logo/nuxtjs.png",
+    description: "Nuxt JS",
+    animation: "fade-right",
+    delayAnimation: "250",
   },
   {
     logoPath: "logo/bootstrap.png",
@@ -36,39 +37,39 @@ module.exports = [
     delayAnimation: "250",
   },
   {
-    logoPath: "logo/heroku.png",
-    description: "Heroku",
+    logoPath: "logo/node.png",
+    description: "Node JS",
     animation: "fade-right",
-    delayAnimation: "300",
+    delayAnimation: "250",
+  },
+  {
+    logoPath: "logo/sequelize.png",
+    description: "Sequelize ORM",
+    animation: "fade-right",
+    delayAnimation: "250",
+  },
+  {
+    logoPath: "logo/html.png",
+    description: "HTML 5",
+    animation: "fade-right",
+    delayAnimation: "100",
+  },
+  { 
+    logoPath: "logo/css.png",
+    description: "CSS 3",
+    animation: "fade-right",
+    delayAnimation: "0",
+  },
+  {
+    logoPath: "logo/figma.png",
+    description: "Figma",
+    animation: "fade-right",
+    delayAnimation: "0",
   },
   {
     logoPath: "logo/git.png",
     description: "Git",
     animation: "fade-right",
     delayAnimation: "150",
-  },
-  {
-    logoPath: "logo/postgresql.png",
-    description: "PostgreSQL",
-    animation: "fade-right",
-    delayAnimation: "0",
-  },
-  {
-    logoPath: "logo/ps.png",
-    description: "Photoshop",
-    animation: "fade-left",
-    delayAnimation: "0",
-  },
-  {
-    logoPath: "logo/vuejs.png",
-    description: "VueJS",
-    animation: "fade-left",
-    delayAnimation: "150",
-  },
-  {
-    logoPath: "logo/linux.png",
-    description: "Linux",
-    animation: "fade-left",
-    delayAnimation: "300",
-  },
+  }
 ];
